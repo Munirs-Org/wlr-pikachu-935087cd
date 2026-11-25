@@ -1,0 +1,189 @@
+{
+  "lockfileVersion": 3,
+  "registry": {
+    "name": "wlr-site-registry",
+    "version": "0.3.3",
+    "resolvedRef": "78d07f7ad8810998228bd33aaa6f771f12e724ce"
+  },
+  "items": [
+    {
+      "name": "bind-analytics",
+      "type": "registry:lib",
+      "version": "0.3.3",
+      "files": [
+        {
+          "source": "lib/bind-analytics.ts",
+          "target": "lib/bind-analytics.ts",
+          "hash": "55cf76cbaeb18f7a4379bf4e408194f60d759f4faa7adf042c4819ce09515abd"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "anchor": null
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "version": "0.3.3",
+      "files": [
+        {
+          "source": "components/button.tsx",
+          "target": "components/ui/button.tsx",
+          "hash": "eec1389708fa070a4538e07224f2360cdb438509d74956703d499b55781b1a84"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "anchor": "wlr-button"
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "version": "0.3.3",
+      "files": [
+        {
+          "source": "components/card.tsx",
+          "target": "components/ui/card.tsx",
+          "hash": "d9c2c85e60c1fdef507bd007fa70cc79de6b33e34a911ced47d9665a898cc250"
+        }
+      ],
+      "dependencies": [
+        "clsx@^2.1.1"
+      ],
+      "registryDependencies": [],
+      "anchor": "wlr-card"
+    },
+    {
+      "name": "hero-block",
+      "type": "registry:block",
+      "version": "0.3.3",
+      "files": [
+        {
+          "source": "blocks/hero-block.tsx",
+          "target": "components/blocks/hero-block.tsx",
+          "hash": "4958fb20710110466ce4a2c19fa48cb75c64325775d82bc9173a2c455c2703c9"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "button",
+        "use-analytics",
+        "wlr-theme"
+      ],
+      "anchor": "wlr-hero-block"
+    },
+    {
+      "name": "use-analytics",
+      "type": "registry:hook",
+      "version": "0.3.3",
+      "files": [
+        {
+          "source": "hooks/use-analytics.ts",
+          "target": "hooks/use-analytics.ts",
+          "hash": "227202f824ce7fb646673840db23a33028aef1cde6812515232e33d9338fdd9b"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "anchor": null
+    },
+    {
+      "name": "wlr-footer",
+      "type": "registry:block",
+      "version": "0.3.3",
+      "files": [
+        {
+          "source": "components/chrome/wlr-footer.tsx",
+          "target": "components/chrome/wlr-footer.tsx",
+          "hash": "8f8a10d7511ed3141f9e08768d0f416050ce106e79a69554d502f2836301fa53"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "wlr-theme"
+      ],
+      "anchor": "wlr-footer"
+    },
+    {
+      "name": "wlr-header",
+      "type": "registry:block",
+      "version": "0.3.3",
+      "files": [
+        {
+          "source": "components/chrome/wlr-header.tsx",
+          "target": "components/chrome/wlr-header.tsx",
+          "hash": "48253d2723356b52509aec24445f4b9181903128a6b9f7f3e04145384b1f6178"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "wlr-nav",
+        "button",
+        "use-analytics",
+        "wlr-theme"
+      ],
+      "anchor": "wlr-header"
+    },
+    {
+      "name": "wlr-nav",
+      "type": "registry:block",
+      "version": "0.3.3",
+      "files": [
+        {
+          "source": "components/chrome/wlr-nav.tsx",
+          "target": "components/chrome/wlr-nav.tsx",
+          "hash": "73d4d1c4fc65da689b0c31504679ac63917d9624922016f06eb6d4dd4afe21b4"
+        },
+        {
+          "source": "components/chrome/wlr-nav-link.tsx",
+          "target": "components/chrome/wlr-nav-link.tsx",
+          "hash": "955a8ce534574387515effe46cba14cee7f11d456c34b3a148f8c43329ef37d6"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "wlr-theme"
+      ],
+      "anchor": "wlr-nav"
+    },
+    {
+      "name": "wlr-theme",
+      "type": "registry:theme",
+      "version": "0.3.3",
+      "files": [
+        {
+          "source": "styles/wlr-tokens.css",
+          "target": "styles/wlr-tokens.css",
+          "hash": "3ecd12c925faebf9377c6321422c6f692bc3f8fda0ad317df66acebdf12a2cec"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "anchor": null
+    },
+    {
+      "name": "wlr-themed-footer",
+      "type": "registry:block",
+      "version": "0.3.3",
+      "files": [
+        {
+          "source": "components/chrome/wlr-themed-footer.tsx",
+          "target": "components/chrome/wlr-themed-footer.tsx",
+          "hash": "ce8349803599c4ae6b4642a7ac35587e6fdbdc1da305e13292c22440a4128b84"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "wlr-footer",
+        "wlr-theme"
+      ],
+      "anchor": null
+    }
+  ],
+  "tokens": {
+    "name": "wlr-theme",
+    "version": "0.3.3",
+    "cssVarsHash": "3ecd12c925faebf9377c6321422c6f692bc3f8fda0ad317df66acebdf12a2cec"
+  },
+  "configHash": "c6910423bd59453c5b4175753248224f9a2bd9196ad1fbeeb506a53b0794089b"
+}
