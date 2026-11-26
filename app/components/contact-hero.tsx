@@ -7,9 +7,9 @@ export default function ContactHero() {
       style={{ backgroundColor: "#f2efe8" }}
       aria-labelledby="contact-hero-heading"
     >
-      <div className="grid grid-cols-1 lg:grid-cols-2 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-stretch">
         {/* Left: warm surface panel with headline */}
-        <div className="flex items-center px-6 sm:px-10 lg:pl-16 lg:pr-8 py-16 lg:py-24">
+        <div className="flex items-center px-6 sm:px-10 lg:pl-16 lg:pr-8 py-16 lg:py-24 bg-[#f2efe8]">
           <h1
             id="contact-hero-heading"
             className="text-4xl sm:text-5xl lg:text-[56px] font-bold leading-[1.1]"
@@ -22,22 +22,21 @@ export default function ContactHero() {
           </h1>
         </div>
 
-        {/* Right: angled photo of memorial monument, subject right */}
-        <div className="relative min-h-[240px] sm:min-h-[320px] lg:min-h-[420px]">
-          {/* angled clip: diagonal edge leaning left at top */}
-          <div
-            className="absolute inset-0"
-            style={{
-              clipPath: "polygon(18% 0, 100% 0, 100% 100%, 0 100%)",
-            }}
-          >
-            <GeneratedImage_a53_contact__hero_1 />
-            {/* directional gradient from left, stopping partway across */}
+        {/* Right: memorial monument photo, subject right, full headroom */}
+        <div className="relative min-h-[260px] sm:min-h-[340px] lg:min-h-[440px] overflow-hidden">
+          <div className="absolute inset-0">
+            <GeneratedImage_a53_contact__hero_1
+              className="absolute inset-0 h-full w-full object-cover"
+              style={{ objectPosition: "center right" }}
+            />
+            {/* directional edge gradient from the left, stopping partway across —
+                text-over-surface fade into a clear subject (no flat full tint,
+                no hard diagonal clip) */}
             <div
-              className="absolute inset-0"
+              className="absolute inset-0 pointer-events-none"
               style={{
                 background:
-                  "linear-gradient(to right, rgba(242,239,232,1) 0%, rgba(242,239,232,0.85) 18%, rgba(242,239,232,0) 55%)",
+                  "linear-gradient(to right, #f2efe8 0%, rgba(242,239,232,0.9) 14%, rgba(242,239,232,0) 48%)",
               }}
             />
           </div>

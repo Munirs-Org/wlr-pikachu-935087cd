@@ -1,4 +1,4 @@
-import { MessageSquareText, FileSearch, HandCoins } from "lucide-react";
+import { MessageSquareText, FileCheck2, HandHeart } from "lucide-react";
 
 const steps = [
   {
@@ -9,13 +9,13 @@ const steps = [
   },
   {
     number: "2.",
-    icon: FileSearch,
+    icon: FileCheck2,
     title: "Review by Our Team",
     copy: "Review your story team miners by and site aims to sharing insights into your story.",
   },
   {
     number: "3.",
-    icon: HandCoins,
+    icon: HandHeart,
     title: "Receive Guidance",
     copy: "Receive contributions and receive guidance or contributions to the communication.",
   },
@@ -23,33 +23,32 @@ const steps = [
 
 export default function ContactSteps() {
   return (
-    <section className="w-full bg-[#faf8f4] py-16 md:py-20">
-      <div className="mx-auto max-w-6xl px-6">
-        <h2 className="text-center font-sans text-[32px] font-bold leading-[1.2] text-[#1a1917]">
-          Process Highlights / Service Tiers
+    <section className="w-full bg-[#faf8f4] py-16 px-6 md:px-10">
+      <div className="mx-auto max-w-6xl">
+        <h2 className="text-center font-[family-name:var(--font-display)] text-[28px] md:text-[32px] font-bold leading-[1.2] text-[#1a1917]">
+          How Reaching Out Works
         </h2>
-        <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-3">
-          {steps.map((step) => {
-            const Icon = step.icon;
-            return (
-              <div key={step.title} className="flex items-start gap-4">
-                <span className="text-[20px] font-bold leading-none text-[#1a1917]">
-                  {step.number}
-                </span>
-                <div>
-                  <div className="mb-3 flex h-10 w-10 items-center justify-center">
-                    <Icon className="h-7 w-7 text-[#9a3412]" strokeWidth={1.5} />
-                  </div>
-                  <h3 className="text-[18px] font-semibold leading-[1.3] text-[#1a1917]">
-                    {step.title}
-                  </h3>
-                  <p className="mt-2 text-[14px] font-normal leading-[1.5] text-[#1a1917]">
-                    {step.copy}
-                  </p>
-                </div>
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-8 items-start">
+          {steps.map(({ number, icon: Icon, title, copy }) => (
+            <div key={title} className="flex gap-3">
+              <span className="font-[family-name:var(--font-display)] text-[20px] font-bold text-[#1a1917]">
+                {number}
+              </span>
+              <div>
+                <Icon
+                  className="h-6 w-6 text-[#9a3412]"
+                  strokeWidth={1.5}
+                  aria-hidden="true"
+                />
+                <h3 className="mt-3 font-[family-name:var(--font-display)] text-[17px] font-semibold text-[#1a1917]">
+                  {title}
+                </h3>
+                <p className="mt-2 text-[14px] leading-[1.6] text-[#1a1917]/80">
+                  {copy}
+                </p>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
       </div>
     </section>
