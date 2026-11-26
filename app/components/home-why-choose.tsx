@@ -1,3 +1,5 @@
+import { GeneratedImage_a53_home__hero_1 } from "../../components/generated-assets";
+
 export default function HomeWhyChoose() {
   const items = [
     {
@@ -32,13 +34,10 @@ export default function HomeWhyChoose() {
         </h2>
 
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-start">
-          <div className="overflow-hidden rounded-lg">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/assets/why-choose-memorial-garden.jpg"
-              alt="Family gathered with Pikachu at a memorial garden"
-              className="h-72 w-full object-cover md:h-80"
-            />
+          <div className="overflow-hidden rounded-[12px] border border-[#dcd6ca]">
+            <div className="h-72 w-full md:h-80">
+              <GeneratedImage_a53_home__hero_1 />
+            </div>
           </div>
 
           <div>

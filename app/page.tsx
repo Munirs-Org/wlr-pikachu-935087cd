@@ -1,16 +1,15 @@
 import type { Metadata } from "next";
-import HomeCtaBand from "./components/home-cta-band";
-import HomeFaq from "./components/home-faq";
 import HomeHero from "./components/home-hero";
 import HomeOfferingsGrid from "./components/home-offerings-grid";
-import HomeProcessHighlights from "./components/home-process-highlights";
 import HomeWhyChoose from "./components/home-why-choose";
-import { GeneratedImage_a53_home__other_1 } from "../components/generated-assets";
+import HomeProcessHighlights from "./components/home-process-highlights";
+import HomeFaq from "./components/home-faq";
+import HomeCtaBand from "./components/home-cta-band";
 
 export const metadata: Metadata = {
-  title: "Pikachu: Pokemon Memorial Site (Certified Experts)",
+  title: "Pikachu | Pokemon Memorial Site",
   description:
-    "Explore pokemon memorial site with Pikachu. Providing trusted pikachu life achievements, certified solutions, and prompt turnaround. Call us now.",
+    "This is a site dedicated to Pikachu, his life achievements and remembrance.",
 };
 
 export default function HomePage() {
@@ -19,12 +18,9 @@ export default function HomePage() {
       <HomeHero />
       <HomeOfferingsGrid />
       <HomeWhyChoose />
-      <div className="mx-auto w-full max-w-5xl px-6 pb-12">
-        <GeneratedImage_a53_home__other_1 />
-      </div>
       <HomeProcessHighlights />
       <HomeFaq />
       <HomeCtaBand />
-    </>
+      </>
   );
 }

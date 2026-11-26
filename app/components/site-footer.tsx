@@ -14,7 +14,7 @@ export default function SiteFooter() {
 
   return (
     <footer className="w-full bg-[#f2efe8] border-t border-[#dcd6ca]">
-      <div className="mx-auto max-w-6xl px-6 py-10 grid grid-cols-1 gap-8 md:grid-cols-[1fr_auto_1.4fr] md:items-start">
+      <div className="mx-auto max-w-6xl px-6 py-10 grid grid-cols-1 sm:grid-cols-[1fr_auto_1.4fr] gap-6 sm:gap-8 sm:items-start">
         {/* Logo block */}
         <div className="flex items-center gap-3">
           <Image
@@ -31,7 +31,7 @@ export default function SiteFooter() {
 
         {/* Navigation column */}
         <nav aria-label="Footer navigation">
-          <ul className="flex flex-col gap-2">
+          <ul className="flex flex-row flex-wrap gap-x-6 gap-y-1 sm:flex-col sm:gap-2">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
