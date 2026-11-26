@@ -1,4 +1,4 @@
-import GeneratedImage_a53_about__content_1 from "../../components/generated-assets";
+import { GeneratedImage_a53_about__content_1 } from "../../components/generated-assets";
 
 export default function AboutStoryBand() {
   return (

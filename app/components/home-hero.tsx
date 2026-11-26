@@ -1,5 +1,5 @@
 import Link from "next/link";
-import GeneratedImage_a53_home__hero_1 from "../../components/generated-assets";
+import { GeneratedImage_a53_home__hero_1 } from "../../components/generated-assets";
 
 export default function HomeHero() {
   return (

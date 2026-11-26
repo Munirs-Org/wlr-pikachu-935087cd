@@ -1,4 +1,4 @@
-import GeneratedImage_a53_contact__hero_1 from "../../components/generated-assets";
+import { GeneratedImage_a53_contact__hero_1 } from "../../components/generated-assets";
 
 export default function ContactHero() {
   return (
